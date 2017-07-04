@@ -130,8 +130,10 @@ public class ScreenManager {
                     frame.createBufferStrategy(2);
                 }
             });
-        } catch (InterruptedException | InvocationTargetException ex) {
+        } catch (InterruptedException ex) {
             // ignore
+        } catch (InvocationTargetException ex) {
+        	// ignore
         }
 
 
